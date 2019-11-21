@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chessboard</title>
+    <style>
+    body {
+  margin: 0;
+}
+
+.chessTable {
+  margin-left: 10vmin;
+  margin-top: 10vmin;
+}
+
+.chessTable>div:nth-child(-n+4) {
+  height: 10vmin;
+  width: 80vmin;
+  outline: 1px solid #f00;
+  position: relative;
+}
+
+.chessTable>div:nth-child(2) {
+  top: 10vmin;
+}
+
+.chessTable>div:nth-child(3) {
+  top: 20vmin;
+}
+
+.chessTable>div:nth-child(4) {
+  top: 30vmin;
+}
+
+
+.chessTable>div:nth-child(-n+4)::after {
+  height: 10vmin;
+  width: 80vmin;
+  outline: 1px solid #f00;
+  content: '';
+  display: block;
+  position: relative;
+  top: 10vmin;
+  background: linear-gradient(to right, #fff 12.49%, #f00 12.50%, #f00 24.99%, #fff 25%, #fff 37.49%, #f00 37.50%, #f00 49.99%,
+#fff 50%, #fff 62.49%, #f00 62.50%, #f00 74.99%, #fff 75%, #fff 87.49%, #f00 87.50%);
+}
+
+
+.chessTable>div:nth-child(1)::before, .chessTable>div:nth-child(2)::before {
+  content: '12345678';
+  letter-spacing: calc(10vmin - 0.5em);
+  display: block;
+  position: fixed;
+  height: 10vmin;
+  width: 80vmin;
+  left:15vmin;
+}
+
+.chessTable>div:nth-child(1)::before {
+  top: calc(5vmin - 0.5em);
+}
+
+.chessTable>div:nth-child(2)::before {
+  top: calc(95vmin - 0.5em);
+}
+
+.chessTable>div:nth-child(3)::before, .chessTable>div:nth-child(4)::before {
+  content: 'abcdefgh';
+  letter-spacing: calc(10vmin - 0.5em);
+  display: block;
+  position: fixed;
+  word-wrap: break-word;
+  height: 80vmin;
+  width: 10vmin;
+  top:10vmin;
+  line-height: calc(10vmin);
+}
+
+.chessTable>div:nth-child(3)::before {
+  left: calc(5vmin - 0.5em);
+}
+
+.chessTable>div:nth-child(4)::before {
+  left: calc(95vmin - 0.5em);
+}
+
+
+
+.chessTable>div:nth-child(-n+4) {
+  background: linear-gradient(to left, #fff 12.49%, #f00 12.50%, #f00 24.99%, #fff 25%, #fff 37.49%, #f00 37.50%, #f00 49.99%,
+#fff 50%, #fff 62.49%, #f00 62.50%, #f00 74.99%, #fff 75%, #fff 87.49%, #f00 87.50%);
+}
+
+
+
+}
+
+
+
+
+   
+    </style>
+</head>
+<body>
+
+       	<div class="chessTable">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+</body>
+</html>
