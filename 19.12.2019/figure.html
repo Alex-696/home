@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>figure</title>
+    <style>
+    @media screen and (min-width: 0px) and (max-width: 299px) {
+    .triangle {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid green;
+     position: absolute;
+     transition: all 2s;
+     }
+    }
+   @media screen and (min-width: 300px) and (max-width: 800px) {
+    .square {
+    background-color: blue;
+    width: 50vw;
+	height: 50vw;
+    transition: all 2s;
+    }
+   }
+  @media screen and (min-width: 801px) {
+      .round {
+  width: 40vw;
+  height: 40vw;
+ transition: all 2s;
+  border-radius: 50%;
+  background:red;}
+  }
+      </style>
+</head>
+<body>
+<div class="triangle"></div>
+<div class="square"></div>
+<div class="round"></div>
+</body>
+</html>
